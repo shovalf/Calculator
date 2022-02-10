@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23E527E5-8062-40E7-A61B-8FB5A61B3DD4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CalculatorReallyFixed</RootNamespace>
+    <AssemblyName>CalculatorReallyFixed</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\ExpressionAttributes.cs" />
+    <Compile Include="Attributes\OperatorsAttribute.cs" />
+    <Compile Include="Attributes\OperatorTypeAttribute.cs" />
+    <Compile Include="Enums\OperatorTypes.cs" />
+    <Compile Include="Expression\AddOperator.cs" />
+    <Compile Include="Expression\CosOperator.cs" />
+    <Compile Include="Expression\DivOperator.cs" />
+    <Compile Include="Expression\IExpression.cs" />
+    <Compile Include="Expression\MultiOperator.cs" />
+    <Compile Include="Expression\OperandExpression.cs" />
+    <Compile Include="Expression\SinOperator.cs" />
+    <Compile Include="Expression\SubOperator.cs" />
+    <Compile Include="MainCalculatorProgram.cs" />
+    <Compile Include="OperatorOptions\Add.cs" />
+    <Compile Include="OperatorOptions\ClosedParenthesis.cs" />
+    <Compile Include="OperatorOptions\Cos.cs" />
+    <Compile Include="OperatorOptions\Div.cs" />
+    <Compile Include="OperatorOptions\IOperatorOption.cs" />
+    <Compile Include="OperatorOptions\Multi.cs" />
+    <Compile Include="OperatorOptions\OpenParenthesis.cs" />
+    <Compile Include="OperatorOptions\Operand.cs" />
+    <Compile Include="OperatorOptions\Sin.cs" />
+    <Compile Include="OperatorOptions\Sub.cs" />
+    <Compile Include="OperatorsFactoryRecursive.cs" />
+    <Compile Include="PostfixCalculatorNew.cs" />
+    <Compile Include="PostfixExpression.cs" />
+    <Compile Include="Processing\ConvertToOperatorTypes.cs" />
+    <Compile Include="Processing\GetRowEnterExpression.cs" />
+    <Compile Include="Processing\GetRowExpression.cs" />
+    <Compile Include="Processing\IConvertExpression.cs" />
+    <Compile Include="Processing\IGetExpression.cs" />
+    <Compile Include="Processing\ISplitExpression.cs" />
+    <Compile Include="Processing\SplitExpressionTokens.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result\IShowResult.cs" />
+    <Compile Include="Result\ShowExprResult.cs" />
+    <Compile Include="Result\ShowOnlyResult.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

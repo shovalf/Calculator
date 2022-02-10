@@ -1,0 +1,6 @@
+C:\Users\shova\Desktop\c sharp\CalculatorReallyFixed\CalculatorReallyFixed\bin\Debug\CalculatorReallyFixed.exe
+C:\Users\shova\Desktop\c sharp\CalculatorReallyFixed\CalculatorReallyFixed\bin\Debug\CalculatorReallyFixed.pdb
+C:\Users\shova\Desktop\c sharp\CalculatorReallyFixed\CalculatorReallyFixed\obj\Debug\CalculatorReallyFixed.csprojResolveAssemblyReference.cache
+C:\Users\shova\Desktop\c sharp\CalculatorReallyFixed\CalculatorReallyFixed\obj\Debug\CalculatorReallyFixed.csproj.CoreCompileInputs.cache
+C:\Users\shova\Desktop\c sharp\CalculatorReallyFixed\CalculatorReallyFixed\obj\Debug\CalculatorReallyFixed.exe
+C:\Users\shova\Desktop\c sharp\CalculatorReallyFixed\CalculatorReallyFixed\obj\Debug\CalculatorReallyFixed.pdb
